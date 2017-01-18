@@ -1,0 +1,26 @@
+== Projeto LiHead
+
+Esse projeto tem a intenção de compartilhar o mesmo Banco de Dados para os projetos LiHead BackOffice e LiHead Site, onde o backoffice consegue administrar os membros e os produtos do site.
+
+Iniciando a aplicação:
+
+* Clona ou faça o Download do projeto.
+
+* Instale as Gems dependentes do projeto:
+  <tt>Bundle</tt>
+
+* Caso já tenha migrado o projeto LiHead BackOffice, apenas utilize o seguinte comando:
+  <tt>rake db:migrate db:seed</tt>
+
+* E rode a aplicação em localhost, tendo a opção de utilizar o comando:
+  <tt>foreman start</tt>
+
+<b>OBSERVAÇÕES</b>
+* Caso não tenha importado o projeto LiHead BackOffice, acesse o repository "LiHead_BackOffice" e
+siga as instruções do BackOffice.
+* A não importação do projeto BackOffice, o cadastro de produtos e mudança de categoria dos "Members" não será possivel.
+* A utilização do comando <tt>foreman start</tt> nesse projeto, o acesso será na porta 3001.
+* Caso queira testar o projeto com banco populado, utilize os seguintes comandos:
+<tt>rake utils:popular_member</tt>
+* Usuário padrão <b>user</b> admin@admin.com <b>password</b> 123456
+

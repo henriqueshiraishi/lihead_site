@@ -1,0 +1,36 @@
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <%= render partial: "site/home/home_shared/intro" %>
+</section>
+
+<% if member_signed_in? %>
+<!-- Update Section -->
+<section id="update" class="update-section">
+    <%= render partial: "site/home/home_shared/update" %>
+</section>
+<% end %>
+
+<!-- About Section -->
+<section id="company" class="about-section">
+    <%= render partial: "site/home/home_shared/company" %>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <%= render partial: "site/home/home_shared/services" %>
+</section>
+
+<!-- Product Section -->
+<section id="product" class="product-section">
+    <%= render partial: "site/home/home_shared/product" %>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <%= render partial: "site/home/home_shared/contact" %>
+</section>
+
+<!-- Maps Section -->
+<section id="maps" class="maps-section">
+    <%= render partial: "site/home/home_shared/maps" %>
+</section>
